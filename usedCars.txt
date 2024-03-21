@@ -1,0 +1,19 @@
+Tabella: usedCars
+
+marchio: CHAR(30), NOTNULL
+modello: CHAR(10), NOTNULL
+versione: VARCHAR(30), NOTNULL
+anno: YEAR, NOTNULL
+n_telaio: VARCHAR(20), NOTNULL, UNIQUE
+n_targa: CHAR(10), NOTNULL, UNIQUE
+km: INT, NOTNULL
+kw: INT, NOTNULL
+cavalli: FLOAT (4,2), NOTNULL
+colore: CHAR(10), NOTNULL
+incidentata: TINYINT, NOTNULL
+prezzo: DECIMAL(8,2), NOTNULL
+n_posti: TINYINT, NOTNULL
+n_porte: TINYINT, NOTNULL
+cambio: TINYINT, NOTNULL
+tipo_alimentazine: CHAR(10), NOTNULL
+usato_aziendale: TINYINT, NOTNULL
