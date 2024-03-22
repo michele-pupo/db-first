@@ -1,7 +1,8 @@
 Tabella: usedCars
 
-marchio: CHAR(30), NOTNULL
-modello: CHAR(10), NOTNULL
+id: SMALLINT, PRIMARY KEY, AUTO INCREMENT, NOTNULL
+marchio: VARCHAR(30), NOTNULL
+modello: VARCHAR(50), NOTNULL
 versione: VARCHAR(30), NOTNULL
 anno: YEAR, NOTNULL
 n_telaio: VARCHAR(20), NOTNULL, UNIQUE
@@ -17,3 +18,5 @@ n_porte: TINYINT, NOTNULL
 cambio: TINYINT, NOTNULL
 tipo_alimentazine: CHAR(10), NOTNULL
 usato_aziendale: TINYINT, NOTNULL
+targa: VARCHAR(7), NULL, UNIQUE
+disponibilita: TINYINT(1), NOTNULL
